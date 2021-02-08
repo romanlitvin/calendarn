@@ -1,0 +1,22 @@
+@import "src/shared/styles";
+
+.notFoundRouteContainer {
+  display: flex;
+  background: $color-background-dark;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .notFoundLabel {
+    color: $color-red;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+  .errorName {
+    @extend .notFoundLabel;
+    color: $color-red-semi-transparent;
+    font-size: 100px;
+  }
+}

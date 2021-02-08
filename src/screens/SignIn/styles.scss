@@ -1,0 +1,20 @@
+@import "src/shared/styles";
+
+.signInContainer {
+  display: flex;
+  background: $color-background-dark;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .googleAuthButtonContainer {
+    position: relative;
+    padding-left: 20px;
+    .googleLogoImage {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 15px;
+    }
+  }
+}

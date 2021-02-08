@@ -1,0 +1,37 @@
+@import "src/shared/styles";
+@import "src/shared/mixins";
+
+.datePickerContainer {
+  width: 200px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  .datePickerButton {
+    @extend .disabledSelection;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background: $color-text2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    .datePicketButtonLabel {
+      font-size: 15px;
+      font-weight: bold;
+      color: $color-text;
+    }
+  }
+  .chevronRight {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  .chevronLeft {
+    @extend .chevronRight;
+    transform: rotate(180deg);
+  }
+}

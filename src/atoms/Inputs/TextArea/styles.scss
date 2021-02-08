@@ -1,0 +1,14 @@
+@import "../../../shared/styles";
+
+.textAreaContainer {
+  @extend .textInputContainer;
+  height: 0;
+  min-height: 200px;
+  .textArea {
+    @extend .textArea;
+  }
+}
+.textAreaLabel {
+  @extend .textInputLabel;
+  margin-top: 20px;
+}

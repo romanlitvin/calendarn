@@ -1,0 +1,53 @@
+@import "./src/shared/styles";
+
+.timePickerContainer {
+  @extend .textInput;
+  @extend .disabledSelection;
+  .timePickerInput {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+.timeSelect {
+  width: 150px;
+  height: 100px;
+  left: 16vw;
+  bottom: 80px;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid $color-red;
+  .timePickerLabel {
+    color: $color-red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .timePickerLabelSelected {
+    @extend .timePickerLabel;
+    color: $color-text2;
+  }
+  .timeSelectHours {
+    width: 50%;
+    height: 100%;
+    background: $color-background-dark;
+    overflow-y: scroll;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .timeSelectHours::-webkit-scrollbar {
+    display: none;
+  }
+  .timeSelectMinutes {
+    @extend .timeSelectHours;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}

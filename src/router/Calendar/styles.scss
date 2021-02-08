@@ -1,0 +1,35 @@
+@import "../../shared/styles";
+
+.routerContainer {
+  background: $color-background-dark;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  .monthYearZoomContainer {
+    animation-name: monthYearZoomContainer;
+    animation-duration: 0.3s;
+    //animation-direction: reverse;
+  }
+  @keyframes monthYearZoomContainer {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .singleMonthZoomContainer {
+    animation-name: singleMonthZoomContainer;
+    animation-duration: 0.3s;
+    //animation-direction: reverse;
+  }
+  @keyframes singleMonthZoomContainer {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}

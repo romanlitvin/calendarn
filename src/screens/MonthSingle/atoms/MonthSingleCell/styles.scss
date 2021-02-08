@@ -1,0 +1,63 @@
+@import "../../../../shared/styles";
+
+.cell {
+  display: flex;
+  width: calc(100vw / 7);
+  height: calc((100vh - 140px) / 6);
+  border-top: 1px solid $border-dark;
+  border-left: 1px solid $border-dark;
+  background: $color-background-dark;
+  flex-direction: row-reverse;
+  padding: 10px;
+  position: relative;
+  cursor: default;
+}
+.cellDate {
+  font-size: 20px;
+  color: $color-text2;
+  margin: 0;
+}
+.cellDateDisabled {
+  @extend .cellDate;
+  color: $color-disabled;
+}
+.cellDateWeekend {
+  @extend .cellDate;
+  color: $color-disabled2;
+}
+.cellWeekend {
+  @extend .cell;
+  background: $color-background-semi-dark;
+}
+.cellDateToday {
+  @extend .cellDate;
+  color: $color-text;
+  z-index: 2;
+}
+.todayDateContainer {
+  background: $color-red;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.calendarEventLabel {
+  @extend .disabledSelection;
+  font-size: 13px;
+  color: $color-text2;
+  height: 18px;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background: $color-green;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  align-self: center;
+  top: 40px;
+}
