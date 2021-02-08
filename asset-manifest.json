@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/calnedarn/static/css/main.1bfc35b5.chunk.css",
+    "main.js": "/calnedarn/static/js/main.ae908714.chunk.js",
+    "main.js.map": "/calnedarn/static/js/main.ae908714.chunk.js.map",
+    "runtime-main.js": "/calnedarn/static/js/runtime-main.17ead428.js",
+    "runtime-main.js.map": "/calnedarn/static/js/runtime-main.17ead428.js.map",
+    "static/js/2.3b7b0086.chunk.js": "/calnedarn/static/js/2.3b7b0086.chunk.js",
+    "static/js/2.3b7b0086.chunk.js.map": "/calnedarn/static/js/2.3b7b0086.chunk.js.map",
+    "index.html": "/calnedarn/index.html",
+    "precache-manifest.4dec6453f0ad767deb592f6f82b78c59.js": "/calnedarn/precache-manifest.4dec6453f0ad767deb592f6f82b78c59.js",
+    "service-worker.js": "/calnedarn/service-worker.js",
+    "static/css/main.1bfc35b5.chunk.css.map": "/calnedarn/static/css/main.1bfc35b5.chunk.css.map",
+    "static/js/2.3b7b0086.chunk.js.LICENSE.txt": "/calnedarn/static/js/2.3b7b0086.chunk.js.LICENSE.txt",
+    "static/media/instagramIcon.png": "/calnedarn/static/media/instagramIcon.3f972cb7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17ead428.js",
+    "static/js/2.3b7b0086.chunk.js",
+    "static/css/main.1bfc35b5.chunk.css",
+    "static/js/main.ae908714.chunk.js"
+  ]
+}
